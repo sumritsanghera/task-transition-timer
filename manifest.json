@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Task Transition Timer",
+    "version": "1.0",
+    "description": "Helps maintain focus by adding a transition page between tab switches",
+    "permissions": [
+      "tabs",
+      "storage",
+      "webNavigation"
+    ],
+    "browser_action": {
+      "default_icon": "icons/icon96.png",
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "web_accessible_resources": [
+      "transition.html"
+    ]
+  }
